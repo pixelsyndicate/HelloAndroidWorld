@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Hello Android World</string>
+    <string name="hello_world">Hello Android World!</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_description">This is my first app using Google\'s Android Studio.</string>
+    <string name="Text_Medium">Medium Text</string>
+
+</resources>

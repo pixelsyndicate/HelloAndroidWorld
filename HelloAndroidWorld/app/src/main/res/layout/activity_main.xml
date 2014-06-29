@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.pixelsyndicate.helloandroidworld.app.MainActivity">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="532dp"
+            android:layout_gravity="center_horizontal|top"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/hello_world"
+                android:id="@id/title"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:autoText="false"
+                android:capitalize="words"
+                android:textAllCaps="false"
+                android:textAlignment="@integer/abc_max_action_buttons" />
+
+            <TextClock
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textClock"
+                android:layout_gravity="center_horizontal"
+                android:textSize="50sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_description"
+                android:textAppearance="?android:attr/textAppearanceMediumInverse"
+                android:id="@id/title"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:capitalize="words"
+                android:textAllCaps="false"
+                android:textAlignment="@integer/abc_max_action_buttons" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:layout_weight="0.82"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center_horizontal|bottom">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/app_description"
+                android:id="@+id/textDesc"
+                android:layout_gravity="center"
+                android:layout_margin="5sp"
+                android:layout_weight=".90"
+                android:background="@android:color/holo_blue_bright"
+                android:autoText="true"
+                android:gravity="center_vertical|center_horizontal"
+                android:textAlignment="gravity"
+                android:textIsSelectable="false"
+                android:textStyle="italic"
+                android:typeface="sans"
+                android:alpha=".50" />
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>
